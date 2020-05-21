@@ -32,7 +32,7 @@ class ScanViewController: UIViewController , UIImagePickerControllerDelegate , U
             
             
             imageView.image = userimage
-            imageView.contentMode = .scaleToFill
+            imageView.contentMode = .scaleAspectFit
         }
             imagepicker.dismiss(animated: true, completion: nil)
             

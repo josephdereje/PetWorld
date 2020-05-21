@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.navigationController?.isNavigationBarHidden = true
+        
         
          
     }
@@ -30,6 +32,10 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if let user = Auth.auth().currentUser {
+            
+            self.performSegue(withIdentifier: "homescreen", sender: self)
+        }
         
         UIView.animate(withDuration: 2.0, animations: {
             self.loginbutton.alpha = 1.0
@@ -42,13 +48,7 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func registerPressButton(_ sender:UIButton) {
-        performSegue(withIdentifier: "Register", sender: self)
-    }
-    @IBAction func pressedloginbutton(_ sender: UIButton) {
-         
-        performSegue(withIdentifier: "Login", sender: self)
-    }
+ 
     
    
     

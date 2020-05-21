@@ -7,29 +7,41 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewcontroller: UIViewController {
 
+    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
     
     @IBAction func closeloginview(_ sender: UIButton) {
         
-        //dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
         
     }
     
-    /*
-    // MARK: - Navigation
+    @IBAction func loginPressedbutton(_ sender: UIButton) {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        if let email = emailTextfield.text , let password = passwordTextfield.text  {
+            Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+                if error == nil {
+                     self.dismiss(animated: false, completion: nil)
+                }
+                else {
+               
+                    print("error login : \(error!.localizedDescription)")
+                
+                   }
+            }
+            
+        }
 }
+}
+
+
