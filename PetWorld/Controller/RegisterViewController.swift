@@ -27,13 +27,14 @@ class RegisterViewController: UIViewController {
         if let email = emailTextfield.text , let password = passwordTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
                
-                if let e = error{
-                    print (e)
- 
-                    return
+                if error == nil {
                     
-                } else {
-                    self.performSegue(withIdentifier: "homeview", sender: self)
+                    self.errorMessages.text = "SucessFully Registered"
+                    self.dismiss(animated: true, completion: nil)
+                
+                }
+                else {
+                    print("errorlogin:\(error!.localizedDescription)")
                 }
                 
             }

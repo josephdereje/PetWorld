@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0EDAE5F198FD74A091B3F981 /* Pods_PetWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8279E5616CAF1E20B43E270 /* Pods_PetWorld.framework */; };
+		7C0C051B2477BAE000EA5960 /* SelectRegisterationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */; };
+		7C0C051D2477C06A00EA5960 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C051C2477C06A00EA5960 /* Inceptionv3.mlmodel */; };
+		7C0C054C2478090A00EA5960 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0C054B2478090A00EA5960 /* SwiftyJSON.framework */; };
 		7C2C031A2474208E0009EFEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2C03192474208E0009EFEF /* AppDelegate.swift */; };
 		7C2C031C2474208E0009EFEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2C031B2474208E0009EFEF /* ViewController.swift */; };
 		7C2C031F2474208E0009EFEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2C031D2474208E0009EFEF /* Main.storyboard */; };
@@ -19,13 +22,56 @@
 		7C4E9AA02475807E005ABB92 /* MytabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E9A9F2475807E005ABB92 /* MytabbarController.swift */; };
 		7C5523F62476751F0051C3D7 /* MypetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F52476751F0051C3D7 /* MypetViewController.swift */; };
 		7C5523F82476752E0051C3D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F72476752E0051C3D7 /* HomeViewController.swift */; };
-		7C5523FA247696B60051C3D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C5523F9247696B60051C3D7 /* GoogleService-Info.plist */; };
 		7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523FB24769E640051C3D7 /* RegisterViewController.swift */; };
+		7CE4CCA7247850080062C80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4CCA1247850080062C80D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C0C053F2478084100EA5960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C0C05372478084100EA5960 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		7C0C05412478084100EA5960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C0C05372478084100EA5960 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		7C0C05432478084100EA5960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C0C05372478084100EA5960 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		7C0C05452478084100EA5960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C0C05372478084100EA5960 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		7C0C05472478084100EA5960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C0C05372478084100EA5960 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2B03C564DBE06A2F33729C0F /* Pods-PetWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWorld.release.xcconfig"; path = "Target Support Files/Pods-PetWorld/Pods-PetWorld.release.xcconfig"; sourceTree = "<group>"; };
 		4450CA3A015EF54443BD7536 /* Pods-PetWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWorld.debug.xcconfig"; path = "Target Support Files/Pods-PetWorld/Pods-PetWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegisterationViewController.swift; sourceTree = "<group>"; };
+		7C0C051C2477C06A00EA5960 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		7C0C05222477CE2500EA5960 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0C05372478084100EA5960 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		7C0C054B2478090A00EA5960 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2C03162474208E0009EFEF /* PetWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2C03192474208E0009EFEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C2C031B2474208E0009EFEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,8 +85,8 @@
 		7C4E9A9F2475807E005ABB92 /* MytabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MytabbarController.swift; sourceTree = "<group>"; };
 		7C5523F52476751F0051C3D7 /* MypetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypetViewController.swift; sourceTree = "<group>"; };
 		7C5523F72476752E0051C3D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		7C5523F9247696B60051C3D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C5523FB24769E640051C3D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7CE4CCA1247850080062C80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8279E5616CAF1E20B43E270 /* Pods_PetWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -49,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0C054C2478090A00EA5960 /* SwiftyJSON.framework in Frameworks */,
 				0EDAE5F198FD74A091B3F981 /* Pods_PetWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,9 +103,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C0C05382478084100EA5960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C0C05402478084100EA5960 /* SwifteriOS.framework */,
+				7C0C05422478084100EA5960 /* SwifterMac.framework */,
+				7C0C05442478084100EA5960 /* SwifterDemoiOS.app */,
+				7C0C05462478084100EA5960 /* SwifterDemoMac.app */,
+				7C0C05482478084100EA5960 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7C2C030D2474208E0009EFEF = {
 			isa = PBXGroup;
 			children = (
+				7C0C05372478084100EA5960 /* Swifter.xcodeproj */,
 				7C2C03182474208E0009EFEF /* PetWorld */,
 				7C2C03172474208E0009EFEF /* Products */,
 				D0FA2C9452AC556F85CF61B3 /* Pods */,
@@ -81,7 +141,8 @@
 				7C4E9A8F24754794005ABB92 /* Controller */,
 				7C4E9A90247547AD005ABB92 /* View */,
 				7C2C03282474208F0009EFEF /* Info.plist */,
-				7C5523F9247696B60051C3D7 /* GoogleService-Info.plist */,
+				7C0C051C2477C06A00EA5960 /* Inceptionv3.mlmodel */,
+				7CE4CCA1247850080062C80D /* GoogleService-Info.plist */,
 				7C2C03202474208E0009EFEF /* PetWorld.xcdatamodeld */,
 			);
 			path = PetWorld;
@@ -107,6 +168,7 @@
 				7C4E9A9F2475807E005ABB92 /* MytabbarController.swift */,
 				7C5523F52476751F0051C3D7 /* MypetViewController.swift */,
 				7C5523F72476752E0051C3D7 /* HomeViewController.swift */,
+				7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +193,8 @@
 		EDCB586213A45E69D8DD9BD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C0C054B2478090A00EA5960 /* SwiftyJSON.framework */,
+				7C0C05222477CE2500EA5960 /* SwiftyJSON.framework */,
 				B8279E5616CAF1E20B43E270 /* Pods_PetWorld.framework */,
 			);
 			name = Frameworks;
@@ -148,6 +212,7 @@
 				7C2C03132474208E0009EFEF /* Frameworks */,
 				7C2C03142474208E0009EFEF /* Resources */,
 				2594CE8E561CCB18620D393C /* [CP] Embed Pods Frameworks */,
+				936354AC00929C281421E8B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +249,12 @@
 			mainGroup = 7C2C030D2474208E0009EFEF;
 			productRefGroup = 7C2C03172474208E0009EFEF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7C0C05382478084100EA5960 /* Products */;
+					ProjectRef = 7C0C05372478084100EA5960 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7C2C03152474208E0009EFEF /* PetWorld */,
@@ -191,13 +262,51 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		7C0C05402478084100EA5960 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 7C0C053F2478084100EA5960 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C0C05422478084100EA5960 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 7C0C05412478084100EA5960 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C0C05442478084100EA5960 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 7C0C05432478084100EA5960 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C0C05462478084100EA5960 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 7C0C05452478084100EA5960 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C0C05482478084100EA5960 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 7C0C05472478084100EA5960 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		7C2C03142474208E0009EFEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C2C03242474208F0009EFEF /* Assets.xcassets in Resources */,
-				7C5523FA247696B60051C3D7 /* GoogleService-Info.plist in Resources */,
+				7CE4CCA7247850080062C80D /* GoogleService-Info.plist in Resources */,
 				7C4E9A9A24756CD5005ABB92 /* Launch Screen.storyboard in Resources */,
 				7C2C031F2474208E0009EFEF /* Main.storyboard in Resources */,
 			);
@@ -245,6 +354,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		936354AC00929C281421E8B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetWorld/Pods-PetWorld-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetWorld/Pods-PetWorld-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetWorld/Pods-PetWorld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -252,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0C051D2477C06A00EA5960 /* Inceptionv3.mlmodel in Sources */,
 				7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */,
 				7C4E9A8E2475478A005ABB92 /* LoginViewcontroller.swift in Sources */,
 				7C2C031C2474208E0009EFEF /* ViewController.swift in Sources */,
@@ -261,6 +388,7 @@
 				7C2C031A2474208E0009EFEF /* AppDelegate.swift in Sources */,
 				7C5523F62476751F0051C3D7 /* MypetViewController.swift in Sources */,
 				7C2C03222474208E0009EFEF /* PetWorld.xcdatamodeld in Sources */,
+				7C0C051B2477BAE000EA5960 /* SelectRegisterationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@ import Firebase
 
 class LoginViewcontroller: UIViewController {
 
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     override func viewDidLoad() {
@@ -27,19 +28,26 @@ class LoginViewcontroller: UIViewController {
     }
     
     @IBAction func loginPressedbutton(_ sender: UIButton) {
-
-        if let email = emailTextfield.text , let password = passwordTextfield.text  {
+        
+            spinner.startAnimating()
+            if let email = self.emailTextfield.text , let password = self.passwordTextfield.text  {
             Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
-                if error == nil {
+              
+                DispatchQueue.main.async {
+                    
+                                    if error == nil {
                      self.dismiss(animated: false, completion: nil)
+                                        
+                                        
                 }
                 else {
-               
+                     self.spinner.stopAnimating()
                     print("error login : \(error!.localizedDescription)")
                 
                    }
             }
             
+        }
         }
 }
 }
