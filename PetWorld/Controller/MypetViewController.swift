@@ -14,14 +14,16 @@ import GooglePlaces
 
 
 class MypetViewController: UIViewController {
+    
+ let locationManager = CLLocationManager()
 var placesClient: GMSPlacesClient!
     @IBOutlet weak var addresslabel: UILabel!
     @IBOutlet weak var namelable: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let locationManager = CLLocationManager()
+    
         // For getting the user permission to use location service when the app is running
-       // locationManager.requestWhenInUseAuthorization()
+       locationManager.requestWhenInUseAuthorization()
         // For getting the user permission to use l0ocation service always
        // locationManager.requestAlwaysAuthorization()
             placesClient = GMSPlacesClient.shared()
@@ -42,7 +44,10 @@ var placesClient: GMSPlacesClient!
     }
     
     @IBAction func getcurrentlocation(_ sender: UIButton) {
+       
+        //locationManager.requestAlwaysAuthorization()
         placesClient.currentPlace(callback: { (placeLikelihoodList, error) -> Void in
+            
             if let error = error {
                 print("Current Place error: \(error.localizedDescription)")
                 return
