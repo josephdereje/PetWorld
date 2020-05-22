@@ -42,7 +42,9 @@ class LoginViewcontroller: UIViewController {
                 }
                 else {
                      self.spinner.stopAnimating()
-                    print("error login : \(error!.localizedDescription)")
+                  let casterror = error! as NSError
+                                        
+                                        print(casterror)
                 
                    }
             }

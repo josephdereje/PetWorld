@@ -23,7 +23,7 @@
 		7C5523F62476751F0051C3D7 /* MypetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F52476751F0051C3D7 /* MypetViewController.swift */; };
 		7C5523F82476752E0051C3D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F72476752E0051C3D7 /* HomeViewController.swift */; };
 		7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523FB24769E640051C3D7 /* RegisterViewController.swift */; };
-		7CE4CCA7247850080062C80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4CCA1247850080062C80D /* GoogleService-Info.plist */; };
+		7CE4CCB4247859DA0062C80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +86,7 @@
 		7C5523F52476751F0051C3D7 /* MypetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypetViewController.swift; sourceTree = "<group>"; };
 		7C5523F72476752E0051C3D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C5523FB24769E640051C3D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		7CE4CCA1247850080062C80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8279E5616CAF1E20B43E270 /* Pods_PetWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,8 +141,8 @@
 				7C4E9A8F24754794005ABB92 /* Controller */,
 				7C4E9A90247547AD005ABB92 /* View */,
 				7C2C03282474208F0009EFEF /* Info.plist */,
+				7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */,
 				7C0C051C2477C06A00EA5960 /* Inceptionv3.mlmodel */,
-				7CE4CCA1247850080062C80D /* GoogleService-Info.plist */,
 				7C2C03202474208E0009EFEF /* PetWorld.xcdatamodeld */,
 			);
 			path = PetWorld;
@@ -306,8 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C2C03242474208F0009EFEF /* Assets.xcassets in Resources */,
-				7CE4CCA7247850080062C80D /* GoogleService-Info.plist in Resources */,
 				7C4E9A9A24756CD5005ABB92 /* Launch Screen.storyboard in Resources */,
+				7CE4CCB4247859DA0062C80D /* GoogleService-Info.plist in Resources */,
 				7C2C031F2474208E0009EFEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
