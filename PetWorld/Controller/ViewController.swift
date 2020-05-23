@@ -39,9 +39,7 @@ class ViewController: UIViewController {
         
         UIView.animate(withDuration: 2.0, animations: {
             self.loginbutton.alpha = 1.0
-            self.registerbutton.alpha = 1.0
-            
-            
+            self.registerbutton.alpha = 1.0 
             
         }, completion: nil)
         

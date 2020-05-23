@@ -163,11 +163,11 @@
 			children = (
 				7C2C031B2474208E0009EFEF /* ViewController.swift */,
 				7C4E9A8D2475478A005ABB92 /* LoginViewcontroller.swift */,
+				7C5523F72476752E0051C3D7 /* HomeViewController.swift */,
 				7C5523FB24769E640051C3D7 /* RegisterViewController.swift */,
 				7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */,
 				7C4E9A9F2475807E005ABB92 /* MytabbarController.swift */,
 				7C5523F52476751F0051C3D7 /* MypetViewController.swift */,
-				7C5523F72476752E0051C3D7 /* HomeViewController.swift */,
 				7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */,
 			);
 			path = Controller;

@@ -41,7 +41,13 @@ class LoginViewcontroller: UIViewController {
                                         
                 }
                 else {
-                     self.spinner.stopAnimating()
+                   self.spinner.stopAnimating()
+                    let logerror = String(error?.localizedDescription ?? "error")
+                     let alert = UIAlertController(title: "Login Fail", message: logerror, preferredStyle: .alert)
+                      alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+                       self.present(alert,animated: true, completion: nil)
+                                        
+
                   let casterror = error! as NSError
                                         
                                         print(casterror)

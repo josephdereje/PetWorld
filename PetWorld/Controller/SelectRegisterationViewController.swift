@@ -19,6 +19,9 @@ class SelectRegisterationViewController: UIViewController {
     }
     
 
-   
+    @IBAction func closebutton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
 }

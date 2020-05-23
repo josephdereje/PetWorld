@@ -11,12 +11,22 @@ import Firebase
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var currenuserimage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      let user = Auth.auth().currentUser
+      let Emailuser = user?.email
+      
+        navigationItem.title = Emailuser
 
         // Do any additional setup after loading the view.
     }
-    
+    func getuserimage(){
+        
+        //let userid = Auth.auth().currentUser?.uid
+        
+    }
 
     @IBAction func logoutbuttonpressed(_ sender: UIBarButtonItem) {
         
