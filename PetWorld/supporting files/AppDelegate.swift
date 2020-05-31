@@ -25,7 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyCwLboNuBxMP9qUsG-6JnRXp2My4Jz89NI")
         GMSPlacesClient.provideAPIKey("AIzaSyCwLboNuBxMP9qUsG-6JnRXp2My4Jz89NI")
-        
+        _ = Auth.auth().addStateDidChangeListener { auth, user in
+        if user != nil {
+            
+            UserService.obseUserProfile(user!.uid) { userProfile in
+                UserService.currentUserProfile = userProfile
+            }
+            }
+        else {
+            UserService.currentUserProfile = nil
+            }
+        }
         return true
     }
 

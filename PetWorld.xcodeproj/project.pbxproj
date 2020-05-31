@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0EDAE5F198FD74A091B3F981 /* Pods_PetWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8279E5616CAF1E20B43E270 /* Pods_PetWorld.framework */; };
+		7C0A2CD2247992FC005B6F5B /* HomePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A2CD0247992FC005B6F5B /* HomePostTableViewCell.swift */; };
+		7C0A2CD3247992FC005B6F5B /* HomePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C0A2CD1247992FC005B6F5B /* HomePostTableViewCell.xib */; };
 		7C0C051B2477BAE000EA5960 /* SelectRegisterationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */; };
 		7C0C051D2477C06A00EA5960 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C051C2477C06A00EA5960 /* Inceptionv3.mlmodel */; };
 		7C0C054C2478090A00EA5960 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0C054B2478090A00EA5960 /* SwiftyJSON.framework */; };
@@ -24,6 +26,14 @@
 		7C5523F82476752E0051C3D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F72476752E0051C3D7 /* HomeViewController.swift */; };
 		7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523FB24769E640051C3D7 /* RegisterViewController.swift */; };
 		7CE4CCB4247859DA0062C80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */; };
+		7CE4F79A248159BE00566D64 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F799248159BE00566D64 /* CameraViewController.swift */; };
+		7CE4F79C248159FD00566D64 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F79B248159FD00566D64 /* CameraController.swift */; };
+		7CE4F79F2482A6D300566D64 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F79E2482A6D300566D64 /* UserService.swift */; };
+		7CE4F7A12482AAE200566D64 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7A02482AAE200566D64 /* UserProfile.swift */; };
+		7CE4F7A32482AAF600566D64 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7A22482AAF600566D64 /* Post.swift */; };
+		7CE4F7A52483D31C00566D64 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7A42483D31C00566D64 /* AddPostViewController.swift */; };
+		7CE4F7A72483FD6500566D64 /* ImageAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7A62483FD6500566D64 /* ImageAdd.swift */; };
+		7CE4F7A92484069F00566D64 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7A82484069F00566D64 /* HelperExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +77,8 @@
 /* Begin PBXFileReference section */
 		2B03C564DBE06A2F33729C0F /* Pods-PetWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWorld.release.xcconfig"; path = "Target Support Files/Pods-PetWorld/Pods-PetWorld.release.xcconfig"; sourceTree = "<group>"; };
 		4450CA3A015EF54443BD7536 /* Pods-PetWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWorld.debug.xcconfig"; path = "Target Support Files/Pods-PetWorld/Pods-PetWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		7C0A2CD0247992FC005B6F5B /* HomePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostTableViewCell.swift; sourceTree = "<group>"; };
+		7C0A2CD1247992FC005B6F5B /* HomePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePostTableViewCell.xib; sourceTree = "<group>"; };
 		7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegisterationViewController.swift; sourceTree = "<group>"; };
 		7C0C051C2477C06A00EA5960 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		7C0C05222477CE2500EA5960 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +99,14 @@
 		7C5523F72476752E0051C3D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C5523FB24769E640051C3D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7CE4F799248159BE00566D64 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		7CE4F79B248159FD00566D64 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		7CE4F79E2482A6D300566D64 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7CE4F7A02482AAE200566D64 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		7CE4F7A22482AAF600566D64 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7CE4F7A42483D31C00566D64 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		7CE4F7A62483FD6500566D64 /* ImageAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAdd.swift; sourceTree = "<group>"; };
+		7CE4F7A82484069F00566D64 /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 		B8279E5616CAF1E20B43E270 /* Pods_PetWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				7C4E9A8C24752FB7005ABB92 /* supporting files */,
+				7CE4F79D24815A0500566D64 /* model */,
 				7C4E9A8F24754794005ABB92 /* Controller */,
 				7C4E9A90247547AD005ABB92 /* View */,
 				7C2C03282474208F0009EFEF /* Info.plist */,
@@ -161,14 +182,15 @@
 		7C4E9A8F24754794005ABB92 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7C2C031B2474208E0009EFEF /* ViewController.swift */,
-				7C4E9A8D2475478A005ABB92 /* LoginViewcontroller.swift */,
-				7C5523F72476752E0051C3D7 /* HomeViewController.swift */,
-				7C5523FB24769E640051C3D7 /* RegisterViewController.swift */,
+				7CE4F7AA248408A000566D64 /* Main Controller */,
+				7CE4F7A42483D31C00566D64 /* AddPostViewController.swift */,
 				7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */,
 				7C4E9A9F2475807E005ABB92 /* MytabbarController.swift */,
 				7C5523F52476751F0051C3D7 /* MypetViewController.swift */,
 				7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */,
+				7C0A2CD0247992FC005B6F5B /* HomePostTableViewCell.swift */,
+				7C0A2CD1247992FC005B6F5B /* HomePostTableViewCell.xib */,
+				7CE4F799248159BE00566D64 /* CameraViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +201,30 @@
 				7C2C031D2474208E0009EFEF /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7CE4F79D24815A0500566D64 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7CE4F7A82484069F00566D64 /* HelperExtensions.swift */,
+				7CE4F79B248159FD00566D64 /* CameraController.swift */,
+				7CE4F79E2482A6D300566D64 /* UserService.swift */,
+				7CE4F7A02482AAE200566D64 /* UserProfile.swift */,
+				7CE4F7A22482AAF600566D64 /* Post.swift */,
+				7CE4F7A62483FD6500566D64 /* ImageAdd.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7CE4F7AA248408A000566D64 /* Main Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C2C031B2474208E0009EFEF /* ViewController.swift */,
+				7C4E9A8D2475478A005ABB92 /* LoginViewcontroller.swift */,
+				7C5523F72476752E0051C3D7 /* HomeViewController.swift */,
+				7C5523FB24769E640051C3D7 /* RegisterViewController.swift */,
+			);
+			path = "Main Controller";
 			sourceTree = "<group>";
 		};
 		D0FA2C9452AC556F85CF61B3 /* Pods */ = {
@@ -306,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C2C03242474208F0009EFEF /* Assets.xcassets in Resources */,
+				7C0A2CD3247992FC005B6F5B /* HomePostTableViewCell.xib in Resources */,
 				7C4E9A9A24756CD5005ABB92 /* Launch Screen.storyboard in Resources */,
 				7CE4CCB4247859DA0062C80D /* GoogleService-Info.plist in Resources */,
 				7C2C031F2474208E0009EFEF /* Main.storyboard in Resources */,
@@ -380,13 +427,22 @@
 			files = (
 				7C0C051D2477C06A00EA5960 /* Inceptionv3.mlmodel in Sources */,
 				7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */,
+				7CE4F7A32482AAF600566D64 /* Post.swift in Sources */,
+				7CE4F79C248159FD00566D64 /* CameraController.swift in Sources */,
 				7C4E9A8E2475478A005ABB92 /* LoginViewcontroller.swift in Sources */,
 				7C2C031C2474208E0009EFEF /* ViewController.swift in Sources */,
+				7CE4F79A248159BE00566D64 /* CameraViewController.swift in Sources */,
+				7CE4F7A72483FD6500566D64 /* ImageAdd.swift in Sources */,
+				7CE4F79F2482A6D300566D64 /* UserService.swift in Sources */,
 				7C4E9A9E24757B62005ABB92 /* ScanViewController.swift in Sources */,
 				7C5523F82476752E0051C3D7 /* HomeViewController.swift in Sources */,
+				7CE4F7A52483D31C00566D64 /* AddPostViewController.swift in Sources */,
 				7C4E9AA02475807E005ABB92 /* MytabbarController.swift in Sources */,
 				7C2C031A2474208E0009EFEF /* AppDelegate.swift in Sources */,
+				7C0A2CD2247992FC005B6F5B /* HomePostTableViewCell.swift in Sources */,
+				7CE4F7A12482AAE200566D64 /* UserProfile.swift in Sources */,
 				7C5523F62476751F0051C3D7 /* MypetViewController.swift in Sources */,
+				7CE4F7A92484069F00566D64 /* HelperExtensions.swift in Sources */,
 				7C2C03222474208E0009EFEF /* PetWorld.xcdatamodeld in Sources */,
 				7C0C051B2477BAE000EA5960 /* SelectRegisterationViewController.swift in Sources */,
 			);

@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var loginbutton: UIButton!
@@ -32,8 +33,8 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if let user = Auth.auth().currentUser {
-            
+        if Auth.auth().currentUser != nil {
+               
             self.performSegue(withIdentifier: "homescreen", sender: self)
         }
         
