@@ -34,6 +34,10 @@
 		7CE4F7A52483D31C00566D64 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7A42483D31C00566D64 /* AddPostViewController.swift */; };
 		7CE4F7A72483FD6500566D64 /* ImageAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7A62483FD6500566D64 /* ImageAdd.swift */; };
 		7CE4F7A92484069F00566D64 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7A82484069F00566D64 /* HelperExtensions.swift */; };
+		7CE4F7AE24842F2000566D64 /* LoadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7AD24842F2000566D64 /* LoadCell.swift */; };
+		7CE4F7B124851C9800566D64 /* SeeNewPostsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7B024851C9800566D64 /* SeeNewPostsButton.swift */; };
+		7CE4F7B824866FDB00566D64 /* postimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7B724866FDB00566D64 /* postimage.swift */; };
+		7CE4F7BA248673C600566D64 /* postprofile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F7B9248673C600566D64 /* postprofile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +111,10 @@
 		7CE4F7A42483D31C00566D64 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		7CE4F7A62483FD6500566D64 /* ImageAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAdd.swift; sourceTree = "<group>"; };
 		7CE4F7A82484069F00566D64 /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		7CE4F7AD24842F2000566D64 /* LoadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCell.swift; sourceTree = "<group>"; };
+		7CE4F7B024851C9800566D64 /* SeeNewPostsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNewPostsButton.swift; sourceTree = "<group>"; };
+		7CE4F7B724866FDB00566D64 /* postimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postimage.swift; sourceTree = "<group>"; };
+		7CE4F7B9248673C600566D64 /* postprofile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postprofile.swift; sourceTree = "<group>"; };
 		B8279E5616CAF1E20B43E270 /* Pods_PetWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -212,6 +220,10 @@
 				7CE4F7A02482AAE200566D64 /* UserProfile.swift */,
 				7CE4F7A22482AAF600566D64 /* Post.swift */,
 				7CE4F7A62483FD6500566D64 /* ImageAdd.swift */,
+				7CE4F7AD24842F2000566D64 /* LoadCell.swift */,
+				7CE4F7B024851C9800566D64 /* SeeNewPostsButton.swift */,
+				7CE4F7B724866FDB00566D64 /* postimage.swift */,
+				7CE4F7B9248673C600566D64 /* postprofile.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -425,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE4F7B124851C9800566D64 /* SeeNewPostsButton.swift in Sources */,
 				7C0C051D2477C06A00EA5960 /* Inceptionv3.mlmodel in Sources */,
 				7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */,
 				7CE4F7A32482AAF600566D64 /* Post.swift in Sources */,
@@ -433,6 +446,7 @@
 				7C2C031C2474208E0009EFEF /* ViewController.swift in Sources */,
 				7CE4F79A248159BE00566D64 /* CameraViewController.swift in Sources */,
 				7CE4F7A72483FD6500566D64 /* ImageAdd.swift in Sources */,
+				7CE4F7B824866FDB00566D64 /* postimage.swift in Sources */,
 				7CE4F79F2482A6D300566D64 /* UserService.swift in Sources */,
 				7C4E9A9E24757B62005ABB92 /* ScanViewController.swift in Sources */,
 				7C5523F82476752E0051C3D7 /* HomeViewController.swift in Sources */,
@@ -442,8 +456,10 @@
 				7C0A2CD2247992FC005B6F5B /* HomePostTableViewCell.swift in Sources */,
 				7CE4F7A12482AAE200566D64 /* UserProfile.swift in Sources */,
 				7C5523F62476751F0051C3D7 /* MypetViewController.swift in Sources */,
+				7CE4F7BA248673C600566D64 /* postprofile.swift in Sources */,
 				7CE4F7A92484069F00566D64 /* HelperExtensions.swift in Sources */,
 				7C2C03222474208E0009EFEF /* PetWorld.xcdatamodeld in Sources */,
+				7CE4F7AE24842F2000566D64 /* LoadCell.swift in Sources */,
 				7C0C051B2477BAE000EA5960 /* SelectRegisterationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -261,8 +261,8 @@
                         <viewLayoutGuide key="safeArea" id="fOQ-tj-FKz"/>
                     </view>
                     <navigationItem key="navigationItem" id="MrC-jE-SCK">
-                        <barButtonItem key="leftBarButtonItem" image="camera" id="zpH-pA-mKH">
-                            <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="camera" id="zpH-pA-mKH">
+                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                             <connections>
                                 <segue destination="Y1t-fU-2m5" kind="showDetail" id="bVr-SN-VTj"/>
                             </connections>
@@ -299,46 +299,59 @@
                                 <rect key="frame" x="20" y="114" width="374" height="452"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IZI-Rf-pPe">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="50"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DHv-rr-QW1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profiles" translatesAutoresizingMaskIntoConstraints="NO" id="DHv-rr-QW1">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="6m0-Zo-kkL"/>
                                                     <constraint firstAttribute="height" constant="50" id="ppq-SL-bNm"/>
                                                 </constraints>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vj6-Ad-5TE">
-                                                <rect key="frame" x="70" y="0.0" width="200" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vj6-Ad-5TE">
+                                                <rect key="frame" x="70" y="0.0" width="300" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what is in your mind?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSg-cl-LRC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="15"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="200" id="lNi-fh-cJb"/>
+                                                            <constraint firstAttribute="height" constant="15" id="PVE-0P-TUW"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ABr-RH-65T">
-                                                        <rect key="frame" x="0.0" y="37" width="200" height="13"/>
+                                                        <rect key="frame" x="0.0" y="15" width="300" height="35"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="K4u-bZ-87C"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UCD-fZ-bfi">
-                                        <rect key="frame" x="0.0" y="56" width="374" height="396"/>
+                                        <rect key="frame" x="0.0" y="56" width="374" height="360"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjz-EJ-nGD">
+                                        <rect key="frame" x="0.0" y="422" width="121" height="30"/>
+                                        <state key="normal" title="+ Add post image"/>
+                                    </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="FUN-JQ-yme">
+                                <rect key="frame" x="188.66666666666666" y="456.66666666666669" width="37" height="37"/>
+                                <color key="color" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="F91-W6-Nra" firstAttribute="bottom" secondItem="6FM-oa-LPm" secondAttribute="bottom" constant="296" id="AnN-um-fxH"/>
+                            <constraint firstItem="FUN-JQ-yme" firstAttribute="centerY" secondItem="F91-W6-Nra" secondAttribute="centerY" id="GT7-bu-IzS"/>
+                            <constraint firstItem="FUN-JQ-yme" firstAttribute="centerX" secondItem="F91-W6-Nra" secondAttribute="centerX" id="KOn-5P-1t1"/>
                             <constraint firstItem="6FM-oa-LPm" firstAttribute="top" secondItem="F91-W6-Nra" secondAttribute="top" constant="26" id="M32-Io-ayj"/>
                             <constraint firstItem="F91-W6-Nra" firstAttribute="trailing" secondItem="6FM-oa-LPm" secondAttribute="trailing" constant="20" id="lmq-ID-WuJ"/>
                             <constraint firstItem="6FM-oa-LPm" firstAttribute="leading" secondItem="F91-W6-Nra" secondAttribute="leading" constant="20" id="tKt-HK-6pP"/>
@@ -352,17 +365,26 @@
                                 <action selector="cancelbutton:" destination="kK5-pS-1HZ" id="MHe-DC-HK7"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="POST" id="hV8-Yj-Hsx">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="Post:" destination="kK5-pS-1HZ" id="ryZ-J8-wxY"/>
-                            </connections>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="1JN-1b-OOb">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Ab-Eo-Go8">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="POST">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Post:" destination="kK5-pS-1HZ" eventType="touchUpInside" id="pEO-24-elg"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="ProfileImage" destination="DHv-rr-QW1" id="14H-Cq-ezK"/>
+                        <outlet property="addpostImage" destination="Tjz-EJ-nGD" id="oxH-qc-oeV"/>
                         <outlet property="postImage" destination="UCD-fZ-bfi" id="ROl-aj-h7A"/>
                         <outlet property="postText" destination="WSg-cl-LRC" id="yPw-wa-hPq"/>
+                        <outlet property="postdone" destination="0Ab-Eo-Go8" id="McA-Lj-a2L"/>
+                        <outlet property="spinner" destination="FUN-JQ-yme" id="lbc-LQ-Eh2"/>
                         <outlet property="textcontet" destination="ABr-RH-65T" id="zwS-HC-wSb"/>
                     </connections>
                 </viewController>
@@ -937,7 +959,6 @@
         <image name="Registerbackground" width="375" height="812"/>
         <image name="backgrounrectangle" width="375" height="328"/>
         <image name="buttontextuare" width="225" height="35"/>
-        <image name="camera" width="29" height="32"/>
         <image name="cat" width="139" height="231"/>
         <image name="dog" width="235" height="155"/>
         <image name="emailicon" width="14" height="10"/>

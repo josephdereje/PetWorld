@@ -28,7 +28,8 @@ class HomePostTableViewCell: UITableViewCell {
         userProfileimage.layer.cornerRadius =  userProfileimage.bounds.height/2
          userProfileimage.clipsToBounds = true
         
-    
+         postImage.contentMode = .scaleAspectFit
+            
         //
     }
     
@@ -51,8 +52,20 @@ class HomePostTableViewCell: UITableViewCell {
             {
                 print("no image found ")
             }
+           
         }
-        
+        ImageAdd.getImage(withURL: post.postimage.PostphotoURL, completion: { (image, url) in
+            guard let _post = self.post else { return }
+            if _post.postimage.PostphotoURL.absoluteString == url.absoluteString {
+                
+                self.postImage.image = image
+            }
+            else
+            {
+                print("no image found ")
+            }
+            
+        })
         
         currentuserName.text = post.author.username
         textDescription.text = post.text
