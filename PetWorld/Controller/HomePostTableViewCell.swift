@@ -28,7 +28,7 @@ class HomePostTableViewCell: UITableViewCell {
         userProfileimage.layer.cornerRadius =  userProfileimage.bounds.height/2
          userProfileimage.clipsToBounds = true
         
-         postImage.contentMode = .scaleAspectFit
+         postImage.contentMode = .scaleAspectFill
             
         //
     }
@@ -40,6 +40,7 @@ class HomePostTableViewCell: UITableViewCell {
         
         self.post = post
         self.userProfileimage.image = nil
+        self.postImage.image = nil
         
         
         ImageAdd.getImage(withURL: post.author.photoURL) { image , url in

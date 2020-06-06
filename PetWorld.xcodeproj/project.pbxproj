@@ -21,10 +21,12 @@
 		7C4E9A8E2475478A005ABB92 /* LoginViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E9A8D2475478A005ABB92 /* LoginViewcontroller.swift */; };
 		7C4E9A9A24756CD5005ABB92 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E9A9924756CD5005ABB92 /* Launch Screen.storyboard */; };
 		7C4E9A9E24757B62005ABB92 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */; };
-		7C4E9AA02475807E005ABB92 /* MytabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E9A9F2475807E005ABB92 /* MytabbarController.swift */; };
 		7C5523F62476751F0051C3D7 /* MypetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F52476751F0051C3D7 /* MypetViewController.swift */; };
 		7C5523F82476752E0051C3D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F72476752E0051C3D7 /* HomeViewController.swift */; };
 		7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523FB24769E640051C3D7 /* RegisterViewController.swift */; };
+		7C69A08B248B950B0015695E /* PetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69A08A248B950B0015695E /* PetCollectionViewController.swift */; };
+		7C69A092248BBF3D0015695E /* YBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69A091248BBF3D0015695E /* YBAlertController.swift */; };
+		7C69A0A6248C1EE20015695E /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69A0A5248C1EE20015695E /* SettingTableViewController.swift */; };
 		7CE4CCB4247859DA0062C80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */; };
 		7CE4F79A248159BE00566D64 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F799248159BE00566D64 /* CameraViewController.swift */; };
 		7CE4F79C248159FD00566D64 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F79B248159FD00566D64 /* CameraController.swift */; };
@@ -98,10 +100,12 @@
 		7C4E9A8D2475478A005ABB92 /* LoginViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewcontroller.swift; sourceTree = "<group>"; };
 		7C4E9A9924756CD5005ABB92 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
-		7C4E9A9F2475807E005ABB92 /* MytabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MytabbarController.swift; sourceTree = "<group>"; };
 		7C5523F52476751F0051C3D7 /* MypetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypetViewController.swift; sourceTree = "<group>"; };
 		7C5523F72476752E0051C3D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C5523FB24769E640051C3D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7C69A08A248B950B0015695E /* PetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewController.swift; sourceTree = "<group>"; };
+		7C69A091248BBF3D0015695E /* YBAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBAlertController.swift; sourceTree = "<group>"; };
+		7C69A0A5248C1EE20015695E /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CE4F799248159BE00566D64 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		7CE4F79B248159FD00566D64 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
@@ -190,15 +194,16 @@
 		7C4E9A8F24754794005ABB92 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7CE4F7AA248408A000566D64 /* Main Controller */,
+				7CE4F7AA248408A000566D64 /* Auth Main Controller */,
+				7C69A089248B94C70015695E /* Main Tab controllers */,
 				7CE4F7A42483D31C00566D64 /* AddPostViewController.swift */,
-				7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */,
-				7C4E9A9F2475807E005ABB92 /* MytabbarController.swift */,
-				7C5523F52476751F0051C3D7 /* MypetViewController.swift */,
 				7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */,
 				7C0A2CD0247992FC005B6F5B /* HomePostTableViewCell.swift */,
 				7C0A2CD1247992FC005B6F5B /* HomePostTableViewCell.xib */,
 				7CE4F799248159BE00566D64 /* CameraViewController.swift */,
+				7C69A08A248B950B0015695E /* PetCollectionViewController.swift */,
+				7C69A0A5248C1EE20015695E /* SettingTableViewController.swift */,
+				7C69A0A2248BEC440015695E /* thiredparty */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,6 +214,23 @@
 				7C2C031D2474208E0009EFEF /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7C69A089248B94C70015695E /* Main Tab controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */,
+				7C5523F52476751F0051C3D7 /* MypetViewController.swift */,
+			);
+			path = "Main Tab controllers";
+			sourceTree = "<group>";
+		};
+		7C69A0A2248BEC440015695E /* thiredparty */ = {
+			isa = PBXGroup;
+			children = (
+				7C69A091248BBF3D0015695E /* YBAlertController.swift */,
+			);
+			path = thiredparty;
 			sourceTree = "<group>";
 		};
 		7CE4F79D24815A0500566D64 /* model */ = {
@@ -228,7 +250,7 @@
 			name = model;
 			sourceTree = "<group>";
 		};
-		7CE4F7AA248408A000566D64 /* Main Controller */ = {
+		7CE4F7AA248408A000566D64 /* Auth Main Controller */ = {
 			isa = PBXGroup;
 			children = (
 				7C2C031B2474208E0009EFEF /* ViewController.swift */,
@@ -236,7 +258,7 @@
 				7C5523F72476752E0051C3D7 /* HomeViewController.swift */,
 				7C5523FB24769E640051C3D7 /* RegisterViewController.swift */,
 			);
-			path = "Main Controller";
+			path = "Auth Main Controller";
 			sourceTree = "<group>";
 		};
 		D0FA2C9452AC556F85CF61B3 /* Pods */ = {
@@ -438,7 +460,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CE4F7B124851C9800566D64 /* SeeNewPostsButton.swift in Sources */,
+				7C69A092248BBF3D0015695E /* YBAlertController.swift in Sources */,
 				7C0C051D2477C06A00EA5960 /* Inceptionv3.mlmodel in Sources */,
+				7C69A08B248B950B0015695E /* PetCollectionViewController.swift in Sources */,
 				7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */,
 				7CE4F7A32482AAF600566D64 /* Post.swift in Sources */,
 				7CE4F79C248159FD00566D64 /* CameraController.swift in Sources */,
@@ -449,9 +473,9 @@
 				7CE4F7B824866FDB00566D64 /* postimage.swift in Sources */,
 				7CE4F79F2482A6D300566D64 /* UserService.swift in Sources */,
 				7C4E9A9E24757B62005ABB92 /* ScanViewController.swift in Sources */,
+				7C69A0A6248C1EE20015695E /* SettingTableViewController.swift in Sources */,
 				7C5523F82476752E0051C3D7 /* HomeViewController.swift in Sources */,
 				7CE4F7A52483D31C00566D64 /* AddPostViewController.swift in Sources */,
-				7C4E9AA02475807E005ABB92 /* MytabbarController.swift in Sources */,
 				7C2C031A2474208E0009EFEF /* AppDelegate.swift in Sources */,
 				7C0A2CD2247992FC005B6F5B /* HomePostTableViewCell.swift in Sources */,
 				7CE4F7A12482AAE200566D64 /* UserProfile.swift in Sources */,

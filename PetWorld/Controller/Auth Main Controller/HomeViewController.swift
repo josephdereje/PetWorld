@@ -209,7 +209,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
        // let postsRef = Database.database().reference().child("posts")
        
        
-        oldPostsQuery.queryLimited(toLast: 15).observeSingleEvent(of: .value, with: { snapshot in
+        oldPostsQuery.queryLimited(toLast: 5).observeSingleEvent(of: .value, with: { snapshot in
             var tempPosts = [Post]()
             let lastPost = self.posts.last
             
@@ -230,19 +230,19 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
     
     
 
-    @IBAction func logoutbuttonpressed(_ sender: UIBarButtonItem) {
-        
-        do {
-            try Auth.auth().signOut()
-            
-            //navigationController?.popToRootViewController(animated: true)
-             self.dismiss(animated: true, completion: nil)
-        } catch let signOutError as NSError {
-            
-            print ("Error signing out: %@", signOutError)
-        }
-    }
-    
+//    @IBAction func logoutbuttonpressed(_ sender: UIBarButtonItem) {
+//        
+//        do {
+//            try Auth.auth().signOut()
+//            
+//            //navigationController?.popToRootViewController(animated: true)
+//             self.dismiss(animated: true, completion: nil)
+//        } catch let signOutError as NSError {
+//            
+//            print ("Error signing out: %@", signOutError)
+//        }
+//    }
+//    
     // Table view Data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -269,7 +269,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHeights[indexPath] ?? 72.0
+        return cellHeights[indexPath] ?? 100.0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -33,11 +33,11 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil {
-               
-            self.performSegue(withIdentifier: "homescreen", sender: self)
-        }
-        
+//        if Auth.auth().currentUser != nil {
+//               
+//            self.performSegue(withIdentifier: "homescreen", sender: self)
+//        }
+//        
         UIView.animate(withDuration: 2.0, animations: {
             self.loginbutton.alpha = 1.0
             self.registerbutton.alpha = 1.0 

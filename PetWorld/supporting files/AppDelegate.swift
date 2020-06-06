@@ -25,18 +25,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyCwLboNuBxMP9qUsG-6JnRXp2My4Jz89NI")
         GMSPlacesClient.provideAPIKey("AIzaSyCwLboNuBxMP9qUsG-6JnRXp2My4Jz89NI")
+       
         _ = Auth.auth().addStateDidChangeListener { auth, user in
-        if user != nil {
             
-            UserService.obseUserProfile(user!.uid) { userProfile in
-                UserService.currentUserProfile = userProfile
-            }
-            }
-        else {
-            UserService.currentUserProfile = nil
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            if user != nil {
+                
+                UserService.obseUserProfile(user!.uid) { userProfile in
+                    UserService.currentUserProfile = userProfile
+                }
+                //
+                let controller = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+                self.window?.rootViewController = controller
+               self.window?.makeKeyAndVisible()
+            } else {
+                
+                
+                UserService.currentUserProfile = nil
+                
+                // menu screen
+                let controller = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
             }
         }
+        
         return true
+   
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

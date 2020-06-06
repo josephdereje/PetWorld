@@ -16,9 +16,10 @@ class AddPostViewController: UIViewController , UITextViewDelegate , UIImagePick
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     var delegate:NewPostVCDelegate?
-    var post : Post!
+    var post : Post?
     var homecell : HomePostTableViewCell?
     var imagepost : postprofile?
+   // var profileimage : UIImage?
     
     @IBOutlet weak var addpostImage: UIButton!
     // weak var post : Post?
@@ -46,6 +47,27 @@ class AddPostViewController: UIViewController , UITextViewDelegate , UIImagePick
 //        }
         ProfileImage.layer.cornerRadius = ProfileImage.bounds.height/2
         ProfileImage.clipsToBounds = true
+     
+        
+        if let profileimageurl = UserService.currentUserProfile?.photoURL {
+            
+             ProfileImage.image = nil
+            ImageAdd.getImage(withURL: profileimageurl) { (image, url) in
+              let prouserme = UserService.currentUserProfile
+                if prouserme?.photoURL.absoluteString == url.absoluteString {
+                    
+                    self.ProfileImage.image = image
+                }
+                else
+                {
+                    print("no image found ")
+                }
+            }
+            
+        } else {
+            
+            print("empty url")
+        }
         
         
         //ProfileImage.image = pos
@@ -78,6 +100,23 @@ class AddPostViewController: UIViewController , UITextViewDelegate , UIImagePick
     }
  
     
+   // set user image
+//    func getProfileimage() {
+//
+//
+//        ImageAdd.getImage(withURL: (post?.author.photoURL)!) { (image, url) in
+//            guard let _post = self.post else { return }
+//            if _post.author.photoURL.absoluteString == url.absoluteString {
+//
+//                self.profileimage = image
+//            }
+//            else
+//            {
+//                print("no image found ")
+//            }
+//
+//        }
+//}
     func imagetap() {
         
         let imagetap = UITapGestureRecognizer(target: self, action: #selector(openimagepicker))
