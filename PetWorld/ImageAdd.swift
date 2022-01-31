@@ -9,6 +9,7 @@ import UIKit
 
 class ImageAdd {
     
+    
     static let cache = NSCache<NSString, UIImage>()
     
     static func downloadImage(withURL url:URL, completion: @escaping (_ image:UIImage? , _ url : URL)->()) {
@@ -23,6 +24,7 @@ class ImageAdd {
                 cache.setObject(downloadedImage!, forKey: url.absoluteString as NSString)
             }
             
+        
             DispatchQueue.main.async {
                 completion(downloadedImage,url)
             }

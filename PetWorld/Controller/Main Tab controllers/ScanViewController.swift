@@ -9,16 +9,21 @@
 import UIKit
 import CoreML
 import Vision
+import Alamofire
+import SwiftyJSON
 class ScanViewController: UIViewController , UIImagePickerControllerDelegate , UINavigationControllerDelegate , UITabBarControllerDelegate {
     
     
    
+   
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textlabel : UILabel!
     var spinner = UIActivityIndicatorView()
     let imagepicker = UIImagePickerController()
     var strLabel = UILabel()
-     let effectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+    let effectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     var classificationResults : [VNClassificationObservation] = []
+    let wikipediaURl = "https://en.wikipedia.org/w/api.php"
     override func viewDidLoad() {
         super.viewDidLoad()
         imagepicker.delegate = self
@@ -38,7 +43,7 @@ class ScanViewController: UIViewController , UIImagePickerControllerDelegate , U
             }
             
             imageView.image = userimage
-            activityIndicator("scanning image")
+           // activityIndicator("scanning image")
             imageView.contentMode = .scaleAspectFit
             imagepicker.dismiss(animated: true, completion: nil)
             detectimage(image: convertimage)
@@ -141,42 +146,32 @@ class ScanViewController: UIViewController , UIImagePickerControllerDelegate , U
     
     func detectimage(image: CIImage) {
         
-        guard let model = try?VNCoreMLModel(for: Inceptionv3().model)  else {
+        guard let model = try?VNCoreMLModel(for: Dog_classify().model)  else {
         
             fatalError("model cannot be loaded")
   
     }
          let request = VNCoreMLRequest(model: model) { (request, error) in
            
-             let classifiaction = request.results?.first as? VNClassificationObservation
-    
-              self.navigationItem.title = classifiaction?.identifier.capitalized
-            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-           // self.requestInfo(flowerName: classifiaction!.identifier)
-                        guard let results = request.results as? [VNClassificationObservation],
-                            let topResult = results.first
-                            else {
-                                fatalError("unexpected result type from VNCoreMLRequest")
-                        }
+            
+            guard let classfication = request.results?.first as? VNClassificationObservation else {
+                
+                
+                fatalError("could not classify breed" )
+            }
             
             
-                        if topResult.identifier.contains("dog") {
-                            
-                         // self.activityIndicator("Scanning image")
-                            DispatchQueue.main.async {
-                                self.navigationItem.title = "Dog"
-                                self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.4235294118, green: 0.8039215686, blue: 0.9450980392, alpha: 1)
-                                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-                                self.navigationController?.navigationBar.isTranslucent = false
-                            }
-                        }
-                        else {
-                            DispatchQueue.main.async {
-                                self.navigationItem.title = "Not Dog!"
-                                self.navigationController?.navigationBar.barTintColor = UIColor.red
-                                self.navigationController?.navigationBar.isTranslucent = false
-                            }
-                        }
+            // print(classfication)
+           
+                if classfication.confidence >= 0.60 {
+                    self.navigationItem.title = classfication.identifier.capitalized
+                    print(classfication)
+                    self.requestInfo(breedname: classfication.identifier)
+                } else {
+                    print("no confidence")
+                }
+                
+
             
         }
             let handler = VNImageRequestHandler(ciImage: image)
@@ -187,8 +182,53 @@ class ScanViewController: UIViewController , UIImagePickerControllerDelegate , U
             print(error)
         }
     }
+    
+    //Mark :- perfom request https
+    func requestInfo(breedname: String) {
+    
+    let parameters : [String:String] = [
+        "format" : "json",
+        "action" : "query",
+        "prop" : "extracts",
+        "exintro" : "",
+        "explaintext" : "",
+        "titles" :  breedname,
+        "indexpageids" : "",
+        "redirects" : "1",
+    ]
+        Alamofire.request(wikipediaURl, method: .get, parameters: parameters).responseJSON { (response) in
+          
+            if response.result.isSuccess {
+                
+                print("your informaton about dog breed is herer")
+                //print(response)
+                
+                let breednameJson : JSON = JSON(response.result.value!)
+                
+                let pageid =  breednameJson["query"]["pageids"][0].stringValue
+                let breeddesription =  breednameJson["query"]["pages"][pageid]["extract"].stringValue
+                self.textlabel.text  = breeddesription
+                
+            }      else {
+                print("Error \(String(describing: response.result.error))")
+                self.textlabel.text = "Connection Issues"
+            }
+        }
         
+        
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
     
 //    @IBAction func camerapressed(_ sender: UIBarButtonItem) {
@@ -199,4 +239,32 @@ class ScanViewController: UIViewController , UIImagePickerControllerDelegate , U
 //
 
 
-
+//             let classifiaction = request.results?.first as? VNClassificationObservation
+//
+//              self.navigationItem.title = classifiaction?.identifier.capitalized
+//            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//           // self.requestInfo(flowerName: classifiaction!.identifier)
+//                        guard let results = request.results as? [VNClassificationObservation],
+//                            let topResult = results.first
+//                            else {
+//                                fatalError("unexpected result type from VNCoreMLRequest")
+//                        }
+//
+//
+//                        if topResult.identifier.contains("dog") {
+//
+//                         // self.activityIndicator("Scanning image")
+//                            DispatchQueue.main.async {
+//                                self.navigationItem.title = "Dog"
+//                                self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.4235294118, green: 0.8039215686, blue: 0.9450980392, alpha: 1)
+//                                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//                                self.navigationController?.navigationBar.isTranslucent = false
+//                            }
+//                        }
+//                        else {
+//                            DispatchQueue.main.async {
+//                                self.navigationItem.title = "Not Dog!"
+//                                self.navigationController?.navigationBar.barTintColor = UIColor.red
+//                                self.navigationController?.navigationBar.isTranslucent = false
+//                            }
+//                        }

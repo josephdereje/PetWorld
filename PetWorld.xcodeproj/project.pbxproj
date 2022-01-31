@@ -18,13 +18,14 @@
 		7C2C031F2474208E0009EFEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2C031D2474208E0009EFEF /* Main.storyboard */; };
 		7C2C03222474208E0009EFEF /* PetWorld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C2C03202474208E0009EFEF /* PetWorld.xcdatamodeld */; };
 		7C2C03242474208F0009EFEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2C03232474208F0009EFEF /* Assets.xcassets */; };
+		7C3B79EC2498E76D00A2FF4E /* spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B79EB2498E76D00A2FF4E /* spinner.swift */; };
+		7C3B79F5249A65A100A2FF4E /* Dog_classify.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B79F4249A65A100A2FF4E /* Dog_classify.mlmodel */; };
 		7C4E9A8E2475478A005ABB92 /* LoginViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E9A8D2475478A005ABB92 /* LoginViewcontroller.swift */; };
 		7C4E9A9A24756CD5005ABB92 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E9A9924756CD5005ABB92 /* Launch Screen.storyboard */; };
 		7C4E9A9E24757B62005ABB92 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */; };
 		7C5523F62476751F0051C3D7 /* MypetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F52476751F0051C3D7 /* MypetViewController.swift */; };
 		7C5523F82476752E0051C3D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523F72476752E0051C3D7 /* HomeViewController.swift */; };
 		7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523FB24769E640051C3D7 /* RegisterViewController.swift */; };
-		7C69A08B248B950B0015695E /* PetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69A08A248B950B0015695E /* PetCollectionViewController.swift */; };
 		7C69A092248BBF3D0015695E /* YBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69A091248BBF3D0015695E /* YBAlertController.swift */; };
 		7C69A0A6248C1EE20015695E /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69A0A5248C1EE20015695E /* SettingTableViewController.swift */; };
 		7CE4CCB4247859DA0062C80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */; };
@@ -97,13 +98,14 @@
 		7C2C03212474208E0009EFEF /* PetWorld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetWorld.xcdatamodel; sourceTree = "<group>"; };
 		7C2C03232474208F0009EFEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "PetWorld/supporting files/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		7C2C03282474208F0009EFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C3B79EB2498E76D00A2FF4E /* spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spinner.swift; sourceTree = "<group>"; };
+		7C3B79F4249A65A100A2FF4E /* Dog_classify.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Dog_classify.mlmodel; sourceTree = "<group>"; };
 		7C4E9A8D2475478A005ABB92 /* LoginViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewcontroller.swift; sourceTree = "<group>"; };
 		7C4E9A9924756CD5005ABB92 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		7C5523F52476751F0051C3D7 /* MypetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypetViewController.swift; sourceTree = "<group>"; };
 		7C5523F72476752E0051C3D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C5523FB24769E640051C3D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		7C69A08A248B950B0015695E /* PetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewController.swift; sourceTree = "<group>"; };
 		7C69A091248BBF3D0015695E /* YBAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBAlertController.swift; sourceTree = "<group>"; };
 		7C69A0A5248C1EE20015695E /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				7C4E9A90247547AD005ABB92 /* View */,
 				7C2C03282474208F0009EFEF /* Info.plist */,
 				7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */,
+				7C3B79F4249A65A100A2FF4E /* Dog_classify.mlmodel */,
 				7C0C051C2477C06A00EA5960 /* Inceptionv3.mlmodel */,
 				7C2C03202474208E0009EFEF /* PetWorld.xcdatamodeld */,
 			);
@@ -197,11 +200,9 @@
 				7CE4F7AA248408A000566D64 /* Auth Main Controller */,
 				7C69A089248B94C70015695E /* Main Tab controllers */,
 				7CE4F7A42483D31C00566D64 /* AddPostViewController.swift */,
-				7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */,
 				7C0A2CD0247992FC005B6F5B /* HomePostTableViewCell.swift */,
 				7C0A2CD1247992FC005B6F5B /* HomePostTableViewCell.xib */,
 				7CE4F799248159BE00566D64 /* CameraViewController.swift */,
-				7C69A08A248B950B0015695E /* PetCollectionViewController.swift */,
 				7C69A0A5248C1EE20015695E /* SettingTableViewController.swift */,
 				7C69A0A2248BEC440015695E /* thiredparty */,
 			);
@@ -219,6 +220,7 @@
 		7C69A089248B94C70015695E /* Main Tab controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7C5523F72476752E0051C3D7 /* HomeViewController.swift */,
 				7C4E9A9D24757B62005ABB92 /* ScanViewController.swift */,
 				7C5523F52476751F0051C3D7 /* MypetViewController.swift */,
 			);
@@ -246,6 +248,7 @@
 				7CE4F7B024851C9800566D64 /* SeeNewPostsButton.swift */,
 				7CE4F7B724866FDB00566D64 /* postimage.swift */,
 				7CE4F7B9248673C600566D64 /* postprofile.swift */,
+				7C3B79EB2498E76D00A2FF4E /* spinner.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -253,9 +256,9 @@
 		7CE4F7AA248408A000566D64 /* Auth Main Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7C0C051A2477BAE000EA5960 /* SelectRegisterationViewController.swift */,
 				7C2C031B2474208E0009EFEF /* ViewController.swift */,
 				7C4E9A8D2475478A005ABB92 /* LoginViewcontroller.swift */,
-				7C5523F72476752E0051C3D7 /* HomeViewController.swift */,
 				7C5523FB24769E640051C3D7 /* RegisterViewController.swift */,
 			);
 			path = "Auth Main Controller";
@@ -310,7 +313,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = joseph_Eagles;
 				TargetAttributes = {
 					7C2C03152474208E0009EFEF = {
@@ -462,7 +465,6 @@
 				7CE4F7B124851C9800566D64 /* SeeNewPostsButton.swift in Sources */,
 				7C69A092248BBF3D0015695E /* YBAlertController.swift in Sources */,
 				7C0C051D2477C06A00EA5960 /* Inceptionv3.mlmodel in Sources */,
-				7C69A08B248B950B0015695E /* PetCollectionViewController.swift in Sources */,
 				7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */,
 				7CE4F7A32482AAF600566D64 /* Post.swift in Sources */,
 				7CE4F79C248159FD00566D64 /* CameraController.swift in Sources */,
@@ -482,7 +484,9 @@
 				7C5523F62476751F0051C3D7 /* MypetViewController.swift in Sources */,
 				7CE4F7BA248673C600566D64 /* postprofile.swift in Sources */,
 				7CE4F7A92484069F00566D64 /* HelperExtensions.swift in Sources */,
+				7C3B79F5249A65A100A2FF4E /* Dog_classify.mlmodel in Sources */,
 				7C2C03222474208E0009EFEF /* PetWorld.xcdatamodeld in Sources */,
+				7C3B79EC2498E76D00A2FF4E /* spinner.swift in Sources */,
 				7CE4F7AE24842F2000566D64 /* LoadCell.swift in Sources */,
 				7C0C051B2477BAE000EA5960 /* SelectRegisterationViewController.swift in Sources */,
 			);
@@ -528,6 +532,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -553,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -589,6 +594,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -608,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

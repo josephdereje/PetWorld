@@ -226,7 +226,8 @@ class AddPostViewController: UIViewController , UITextViewDelegate , UIImagePick
                 }
             }else {
                 
-                completion(error as! String)
+                let e =  String(error!.localizedDescription)
+                completion(e)
             }
             // success!
             
@@ -234,6 +235,7 @@ class AddPostViewController: UIViewController , UITextViewDelegate , UIImagePick
         }
     }
 
+    
 //    func savepostImage( postImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
 //
 //        let databaseRef = Database.database().reference().child("posts")

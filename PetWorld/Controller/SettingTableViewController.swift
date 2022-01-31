@@ -24,9 +24,6 @@ class SettingTableViewController: UITableViewController {
       
         self.dismiss(animated: false, completion: nil)
         
-        } catch let signOutError as NSError {
-            
-            print ("Error signing out: %@", signOutError)
         }
 }
 }
