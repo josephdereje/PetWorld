@@ -27,3 +27,7 @@ The classifer is trained on  120 class lables  differnt breeds of dogs
 <h3> Author </h3>
 
 Joseph Dereje 
+
+<h3> License </h3>
+
+Free to use  the code and play with it 
