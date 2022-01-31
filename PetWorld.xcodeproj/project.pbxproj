@@ -28,6 +28,7 @@
 		7C5523FC24769E640051C3D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5523FB24769E640051C3D7 /* RegisterViewController.swift */; };
 		7C69A092248BBF3D0015695E /* YBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69A091248BBF3D0015695E /* YBAlertController.swift */; };
 		7C69A0A6248C1EE20015695E /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69A0A5248C1EE20015695E /* SettingTableViewController.swift */; };
+		7C83A65C27A83295007D31C0 /* App_images in Resources */ = {isa = PBXBuildFile; fileRef = 7C83A65B27A83294007D31C0 /* App_images */; };
 		7CE4CCB4247859DA0062C80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */; };
 		7CE4F79A248159BE00566D64 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F799248159BE00566D64 /* CameraViewController.swift */; };
 		7CE4F79C248159FD00566D64 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4F79B248159FD00566D64 /* CameraController.swift */; };
@@ -108,6 +109,7 @@
 		7C5523FB24769E640051C3D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7C69A091248BBF3D0015695E /* YBAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBAlertController.swift; sourceTree = "<group>"; };
 		7C69A0A5248C1EE20015695E /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		7C83A65B27A83294007D31C0 /* App_images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = App_images; sourceTree = "<group>"; };
 		7CE4CCAE247859DA0062C80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CE4F799248159BE00566D64 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		7CE4F79B248159FD00566D64 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		7C2C030D2474208E0009EFEF = {
 			isa = PBXGroup;
 			children = (
+				7C83A65B27A83294007D31C0 /* App_images */,
 				7C0C05372478084100EA5960 /* Swifter.xcodeproj */,
 				7C2C03182474208E0009EFEF /* PetWorld */,
 				7C2C03172474208E0009EFEF /* Products */,
@@ -388,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C83A65C27A83295007D31C0 /* App_images in Resources */,
 				7C2C03242474208F0009EFEF /* Assets.xcassets in Resources */,
 				7C0A2CD3247992FC005B6F5B /* HomePostTableViewCell.xib in Resources */,
 				7C4E9A9A24756CD5005ABB92 /* Launch Screen.storyboard in Resources */,
